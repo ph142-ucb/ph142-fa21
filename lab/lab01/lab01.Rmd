@@ -8,7 +8,7 @@ knitr::opts_chunk$set(echo = TRUE)
 ```
 
 ### Instructions 
-* Due date: ______.
+* Due date: Friday, August 27th, 11:59pm.
 * Late penalty: 50% late penalty if submitted within 24 hours of due date, no 
 marks for assignments submitted thereafter.
 * This assignment is graded on **correct completion**, all or nothing. You must pass all public tests and submit the assignment for credit.
@@ -83,7 +83,8 @@ will save a set of values in the object "heights". The `c()` tells R to "combine
 
 If you ran the code chunk above, you should see `monthly_wage` as an object in the Environment window.  
 
-**Types of variables in R **
+**Types of variables in R**
+
 Notice in the Environment tab that you can see a descrption of each object that has been saved.  
 For datasets, you will see the number of observations and variables.  For variables you will see the type of variable. 
 
@@ -101,7 +102,9 @@ In this example:
   -**sqrt** is the name of the function:  taking the square root
   -**the parentheses** creates a space where we put the number we want to use the function on
   -**81** the number we are placing in our function
-There are many functions built in to R for example:
+
+There are many functions built in to R. For example:
+
 abs() takes the absolute value 
 log() takes the natural log
 exp() gives powers of e
@@ -168,7 +171,7 @@ Click the packages tab and scroll down to the package name that you loaded. It s
 ### Using the autograder
 We are introducing an autograder for this class. Basically, we've written a series of test cases and checkpoints that test the correctness of your code and allows you to check your work and receive automated real-time feedback on your answers. 
 
-Now, let's try solving a problem. In your assignments, you would be given a prompt and asked to code the answer and assign it to an object. Do not change the name of this object. **For this problem, set `p1` to a mathematical expression that evaluates to 5.** You'll often get starter code that will look like this:
+Now, let's try solving a problem. In your assignments, you will be given a prompt and asked to code the answer and assign it to an object. Do not change the name of this object. **For this problem, set `p1` to a mathematical expression that evaluates to 5.** You'll often get starter code that will look like this:
 
 ```{r five, eval = FALSE}
 # Your answer must be stored in the object p1
@@ -214,7 +217,8 @@ You'll also run into problems that will ask you to explain your answer in a coup
 I am looking forward to [TODO: YOUR ANSWER HERE]
 
 
-Now, at the end of the assignment, you should go back through and run each code chunk to be sure you passed all of your tests. On this assignment, that only means that `p1`, `p2`, and `p3` should all equal 5. One way to check that works well is to click the grey downward facing arrow in the right corner of the code chunk. This will run all previous code chunks so all of your anwsers are up to date.
+Now, at the end of the assignment, you should go back through and run each code chunk to be sure you passed all of your tests. On this assignment, that only means that `p1`, `p2`, and `p3` should all equal 5. One way to check that works well is to click the grey downward facing arrow in the right corner of the code chunk. This will run all previous code chunks so all of your answers are up to date.
+
 
 When you're happy with your work, you can submit your assignment--without even leaving RStudio! The submission instructions will be on the last page of every assignment, including this one. Make sure you don't forget to submit.
 
@@ -238,18 +242,20 @@ p3 <- 5
 
 The autograder is meant to be used as a sanity check for your work, not as an absolute check of correctness. This is because, in the real world, you won't have an autograder to check your analysis/code... unless you write your own test cases (which is recommended, but we won't be covering that in this course). However, **programming is difficult**, and we want to provide you with the best resources to succeed so we will write all the test cases in labs. Since homework is not being collected for credit, we will also write all the test cases for homework. Our goal is that you won't rely too much on the autograder for the homeworks - you can try out a few things and try to intuitively solve the problems. Ask lots of questions - we're excited for you to start the journey of being a data analyst.
 
-Since **labs** have an emphasis on introductory learning, all test cases will be provided. This means, if you pass the test cases given in the assignment, you'll receive full credit on the assignment. Because of this design, labs will be graded **all or nothing,** which means you should pass all tests before submitting.
+
+Since **labs** have an emphasis on introductory learning, all test cases will be provided. This means if you pass the test cases given in the assignment, you'll receive full credit on the assignment. Because of this design, labs will be graded **all or nothing,** which means you should pass all tests before submitting.
 
 ### Checking Your Grades & Regrades
 
 When your assignment is graded, it'll be released on Gradescope and you'll be able to see your code online, as well as the score for each autograded problem and each free-response question. 
 
 
-We know we're also not perfect, and sometimes we mess up the test cases on the autograder, so a correct answer might get graded as incorrect (we hope this is rare), so we highly encourage you to check your assignment promptly after grades are released to make sure you get the score you earned. If you suspect the autograder might be incorrect, you can submit a regrade on Gradescope. Per the regrade policy, **all assignment regrades will be open for 3 school days after score release** (scores released anytime Jan 1 means regrades close Jan 4 night, 11:59pm).
+We know we're not perfect, and sometimes we mess up the test cases on the autograder, so a correct answer might get graded as incorrect (we hope this is rare), so we highly encourage you to check your assignment promptly after grades are released to make sure you get the score you earned. If you suspect the autograder might be incorrect, you can submit a regrade on Gradescope. Per the regrade policy, **all assignment regrades will be open for 3 school days after score release** (scores released anytime Jan 1 means regrades close Jan 4 night, 11:59pm).
 
 
 ### Resources
-We will do our best to introduce and demonstrate all of the code you will need for this class.  If you would like to study more on your own, there are many many resources available online.  If you have questions about R or get stuck, please visit office hours or post to Piazza.
+We will do our best to introduce and demonstrate all of the code you will need for this class.  If you would like to study more on your own, there are many many resources available online.  If you have questions about R or get stuck, please visit office hours or post on Piazza.
+
 
 Hadley Wickham and Garrett Grolemund have written a helpful book about R that is freely available here:  https://r4ds.had.co.nz/
 
@@ -269,6 +275,19 @@ These are the materials I referenced to make these slides. You can look at them 
 
 \newpage
 
+### Before you submit
+
+You must create a password for your gradescope account: 
+
+1. Go to https://www.gradescope.com/login
+2. Click "School Credentials" in the bottom left
+3. Click "CalNet ID" 
+4. Enter your CalNet ID credentials to log in
+5. Click on "Account" in bottom left select "Edit Account" 
+6. Create a password and select "Save Changes" 
+
+**It is important to save changes so your new password stays saved.**
+
 ### Submission
 
 For assignments in this class, you'll be submitting using the **Terminal** tab in the pane below. In order for the submission to work properly, make sure that:
@@ -285,7 +304,11 @@ Once you have checked these items, you can proceed to submit your assignment.
 cd; cd ph142-fa21/lab/lab01; python3 turn_in.py
 
 3. Follow the prompts to enter your Gradescope username and password.
+<<<<<<< HEAD
 4. If the submission is successful, you should see "Submission successful!" appear as output.
+=======
+4. If the submission is successful, you should see "Submission successful!" appear as the output.
+>>>>>>> kelsey-lab01
 5. If the submission fails, try to diagnose the issue using the error messages--if you have problems, post on Piazza under the post "Submission Issues".
 
 The late policy will be strictly enforced, **no matter the reason**, including submission issues, so be sure to submit early enough to have time to diagnose issues if problems arise.
