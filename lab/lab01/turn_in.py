@@ -9,13 +9,8 @@ from os.path import isfile, join
 
 # Change these for each assignment
 ASSIGNMENT_RMD_PATH = "lab01.Rmd"
-<<<<<<< HEAD
-COURSE_ID = 269372
-PROGRAMMING_ASSIGNMENT_ID = 1363700
-=======
 COURSE_ID = 284501
 PROGRAMMING_ASSIGNMENT_ID = 1429413
->>>>>>> kelsey-lab01
 
 # Don't change these
 PDF_PATH = ASSIGNMENT_RMD_PATH.replace('.Rmd', '.pdf')
