@@ -1,5 +1,5 @@
 ---
-title: "Problem Set 1: Manipulation of mammalian sleep data"
+title: "Assignment 1: Manipulation of mammalian sleep data"
 author: "Your name and student ID"
 date: "Today's date"
 output: pdf_document
@@ -7,11 +7,12 @@ output: pdf_document
 
 
 ### Instructions 
-* Solutions will be released on Wednesday, September 1st.
-* This semester, problem sets are for practice only and will not be turned in for marks.
+* Solutions will be released on Friday, July 9th.
+* This semester, homework assignments are for practice only and will not be turned in for marks.
 
 ```{r setup, include = FALSE}
 knitr::opts_chunk$set(echo = TRUE)
+library(testthat)
 ```
 
 Helpful hints:
@@ -30,7 +31,9 @@ save you and the GSIs from frustration!
 
 - It is good practice to not allow your code to run off the page. To
 avoid this, have a look at your knitted PDF and ensure all the code fits in the 
-file. If it doesn't look right, go back to your .Rmd file and add spaces (new lines) using the return or enter key so that the code runs onto the next line.
+file. 
+If it doesn't look right, go back to your .Rmd file and add spaces (new lines) using 
+the return or enter key so that the code runs onto the next line.
 
 \newpage
 
@@ -120,7 +123,7 @@ sleep_small <- NULL # YOUR CODE HERE
 
 \newpage
 
-**3. [1 point] To select a range of columns by name, use the ':' (colon) operator. Redo the selection for question 1, but use the colon operator. Assign this to `sleep_small_colon`. Note that this returns the same data frame as the previous problem, but is not recommended in practice because it depends on the ordering of the columns and isn't explicit in the columns that are selected, whereas selecting columns by name offers much higher readability for someone else looking at your code later on.**
+**3. [1 point] To select a range of columns by name, use the ':' (colon) operator. Redo the selection for question 1, but use the colon operator. Assign this to `sleep_small_colon`. Note that this returns the same data frame as the previous problem, but is not recommended in practice because it depends on the ordering of the columns and isn't explicit in the columns that are selected, whereas selection by name offers much higher readability for someone else looking at your code later on.**
 
 ```{r}
 sleep_small_colon <- NULL # YOUR CODE HERE
