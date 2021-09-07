@@ -1,15 +1,15 @@
-library(testthat)
+test = list(
+  name = "p5",
+  cases = list(
+    ottr::TestCase$new(
+      hidden = FALSE,
+      name = NA,
+      points = 1,
+      code = {
+        testthat::expect_true(p5 == "returns all columns that start with sl",
+                              info = "Checking response...")
 
-test_metadata = "
-cases:
-- hidden: false
-  name: p5
-  points: 1
-name: p5
-
-"
-
-test_that("p5", {
-  expect_true(p5 == "returns all columns that start with sl")
-  print("Checking response...")
-})
+      }
+    )
+  )
+)
