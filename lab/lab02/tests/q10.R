@@ -1,23 +1,39 @@
-test = list(
-  name = "q10",
-  cases = list(
-    ottr::TestCase$new(
-      hidden = FALSE,
-      name = NA,
-      points = 1.0,
-      code = {
-        testthat::expect_true("ggplot" %in% class(p10), 
-                              info = "p10a: Checking p10 is a ggplot")
+library(testthat)
 
-        testthat::expect_true(identical(p10$data, CS_data), 
-                              info = "p10b: Using CS_data")
+test_metadata = "
+cases:
+- hidden: false
+  name: p10a
+  points: 0.25
+- hidden: false
+  name: p10b
+  points: 0.25
+- hidden: false
+  name: p10c
+  points: 0.25
+- hidden: false
+  name: p10d
+  points: 0.25
+name: q10
 
-        testthat::expect_true(rlang::quo_get_expr(p10$mapping$x) == "Region", 
-                              info = "p10c: Checking Region is on the x-axis")
+"
 
-        testthat::expect_true("GeomBar" %in% class(p10$layers[[1]]$geom), 
-                              info = "p10d: Made a barchart")
-      }
-    )
-  )
-)
+test_that("p10a", {
+  expect_true("ggplot" %in% class(p10))
+  print("Checking: p10 is a ggplot")
+})
+
+test_that("p10b", {
+  expect_true(identical(p10$data, CS_data))
+  print("Checking: Using CS_data")
+})
+
+test_that("p10c", {
+  expect_true(rlang::quo_get_expr(p10$mapping$x) == "Region")
+  print("Checking: Region is on the x axis")
+})
+
+test_that("p10d", {
+  expect_true("GeomBar" %in% class(p10$layers[[1]]$geom))
+  print("Checking: Made a barchart")
+})
