@@ -216,12 +216,12 @@ Corinne Riddell
 <pre><code>## # A tibble: 6 x 4
 ##   Births HOSP_BEDSIZE cesarean_rate    ID
 ##    &lt;dbl&gt;        &lt;dbl&gt;         &lt;dbl&gt; &lt;int&gt;
-## 1    514            1         0.539    17
-## 2   2389            3         0.295   420
-## 3    344            3         0.366   412
-## 4    128            1         0.336   110
-## 5    399            3         0.444   431
-## 6   2596            3         0.367   470</code></pre>
+## 1   1364            3         0.573   360
+## 2   1598            2         0.282   235
+## 3   2407            2         0.322   233
+## 4    125            1         0.344    41
+## 5   2042            3         0.312   332
+## 6    994            3         0.234   399</code></pre>
 </div>
 <div id="example-of-srs-in-r-3" class="slide section level3">
 <h1>Example of SRS in R</h1>
@@ -229,12 +229,12 @@ Corinne Riddell
 <pre><code>## # A tibble: 6 x 4
 ##   Births HOSP_BEDSIZE cesarean_rate    ID
 ##    &lt;dbl&gt;        &lt;dbl&gt;         &lt;dbl&gt; &lt;int&gt;
-## 1   1443            1         0.262    10
-## 2   1056            1         0.464    45
-## 3    564            3         0.254   499
-## 4   1356            3         0.341   556
-## 5   3286            2         0.324   149
-## 6    487            1         0.209    51</code></pre>
+## 1   1290            3         0.426   544
+## 2    125            1         0.344    41
+## 3    644            3         0.362   376
+## 4   1946            2         0.395   220
+## 5    195            2         0.282   293
+## 6    287            1         0.314    74</code></pre>
 </div>
 <div id="example-of-srs-in-r-4" class="slide section level3">
 <h1>Example of SRS in R</h1>
@@ -266,7 +266,7 @@ Corinne Riddell
 </div>
 <div id="proportionate-stratified-sampling-in-r" class="slide section level3">
 <h1>Proportionate Stratified sampling in R</h1>
-<p>Suppose you want to take a 10% sample of individuals within each county in California. This is called a proportionate stratified sample. To do this you would use the following code: <code>CA_data %&gt;% group_by(county) %&gt;% sample_frac(0.1)</code></p>
+<p>Suppose you want to take a 10% sample of individuals within each county in California. This is called a proportionate stratified sample. To do this you would use the following code: <code>CA_data %&gt;% group_by(county) %&gt;% slice_sample(prop = 0.1)</code></p>
 <p>Here is an example using the <code>CS_data</code>:</p>
 <div class="sourceCode" id="cb16"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a>CS_10percent_grouped <span class="ot">&lt;-</span> CS_data <span class="sc">%&gt;%</span> </span>
 <span id="cb16-2"><a href="#cb16-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(HOSP_BEDSIZE) <span class="sc">%&gt;%</span></span>
