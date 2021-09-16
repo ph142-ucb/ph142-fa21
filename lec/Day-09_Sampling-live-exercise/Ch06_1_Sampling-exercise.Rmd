@@ -122,7 +122,7 @@ CS_5percent <- CS_data %>% slice_sample(prop = 0.05)
 
 Suppose you want to take a 10% sample of individuals within each county in 
 California. This is called a proportionate stratified sample. To do this you 
-would use the following code: `CA_data %>% group_by(county) %>% sample_frac(0.1)`
+would use the following code: `CA_data %>% group_by(county) %>% slice_sample(prop = 0.1)`
 
 Here is an example using the `CS_data`:
 
