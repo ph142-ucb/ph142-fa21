@@ -6,8 +6,10 @@ test = list(
       name = NA,
       points = 0.3333333333333333,
       code = {
-        testthat::expect_true(is.data.frame(sleep_no_vore), 
-                              info = "p4a: Checking sleep_small_colon is a dataframe")
+        test_that("p4a", {
+          expect_true(is.data.frame(sleep_no_vore))
+          print("p4a: Checking sleep_small_colon is a dataframe")
+        })
       }
     ),
     ottr::TestCase$new(
@@ -15,8 +17,10 @@ test = list(
       name = NA,
       points = 0.3333333333333333,
       code = {
-        testthat::expect_true(ncol(sleep_no_vore) == 10, 
-                              info = "p4b: Checking sleep_small_vore has 10 columns")
+        test_that("p4b", {
+                   expect_true(ncol(sleep_no_vore) == 10)
+           print("p4b: Checking sleep_small_colon has 3 columns")
+        })
       }
     ),
     ottr::TestCase$new(
@@ -24,8 +28,10 @@ test = list(
       name = NA,
       points = 0.3333333333333333,
       code = {
-        testthat::expect_true(!("vore" %in% names(sleep_no_vore)), 
-                              info = "p4c: Checking sleep_no_vore has no columns with 'vore'")
+        test_that("p4c", {
+                   expect_true(!("vore" %in% names(sleep_no_vore)))
+           print("p4c: Checking sleep_no_vore has no columns with 'vore'")
+        })
       }
     )
   )

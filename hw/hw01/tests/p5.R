@@ -6,9 +6,10 @@ test = list(
       name = NA,
       points = 1,
       code = {
-        testthat::expect_true(p5 == "returns all columns that start with sl",
-                              info = "Checking response...")
-
+        test_that("p5", {
+          expect_true(p5 == "returns all columns that start with sl")
+          print("Checking response...")
+        })
       }
     )
   )
