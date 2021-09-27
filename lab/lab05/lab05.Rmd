@@ -359,7 +359,7 @@ p16
 ```
 
 ```{r}
-. = ottr::check("tests/p15.R")
+. = ottr::check("tests/p16.R")
 ```
 
 **Full-Term Birth Weights (From Baldi and Moore, 3E question 11.31, 4E question 11.33).**

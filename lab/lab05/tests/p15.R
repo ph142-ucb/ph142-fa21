@@ -3,21 +3,21 @@ library(testthat)
 test_metadata = "
 cases:
 - hidden: false
-  name: p16a
+  name: p15a
   points: 0.5
 - hidden: false
-  name: p16b
+  name: p15b
   points: 0.5
 name: p15
 
 "
 
-test_that("p16a", {
-  expect_true(between(p16, 0, 1))
-  print("Checking: p16 is a value between 0 and 1")
+test_that("p15a", {
+  expect_true(between(p15, 0, 1))
+  print("Checking: p15 is a value between 0 and 1")
 })
 
-test_that("p16b", {
-  expect_true(all.equal(p16, qnorm(0.35, mean = 0, sd = 1, lower.tail=FALSE), tol = 0.01) )
-  print("Checking: p16 is the correct probability")
+test_that("p15b", {
+  expect_true(all.equal(p15, qnorm(0.8, mean = 0, sd = 1), tol = 0.01) )
+  print("Checking: p15 is the correct probability")
 })
