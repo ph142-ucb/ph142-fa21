@@ -18,6 +18,6 @@ test_that("known_pop_sd_a", {
 })
 
 test_that("known_pop_sd_b", {
-  expect_true(known_pop_sd == 2.786314)
+  expect_true(all.equal(known_pop_sd, 2.786314, tol = 0.001))
   print("Checking: known population sd is the correct value")
 })
