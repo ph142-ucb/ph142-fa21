@@ -1,8 +1,10 @@
 ---
-title: "Chapter 14: Confidence Intervals for a Mean with a Known Standard Deviation"
+title: 'Chapter 14: Confidence Intervals for a Mean with a Known Standard Deviation'
 author: "Corinne Riddell"
 date: "October 11, 2021"
-output: pdf_document
+output:
+  pdf_document: default
+  html_document: default
 ---
 
 ### Learning objectives for today
@@ -14,7 +16,8 @@ standard deviation is known
 ### Readings
 
 * Chapter 14 of Baldi and Moore
-* Online resources: To be added.
+* Online resource: [Estimating a confidence interval see 10.5 and 10.5.2 (we get to the material in 10.5.1 on a later lecture); page 320](https://learningstatisticswithr.com/lsr-0.6.pdf)
+
 
 ### Statistical Inference
 
@@ -38,7 +41,7 @@ measurement error, no selection bias). Note: We don't talk much about systematic
 error in this class, but it is super important if you have observational data.
 Take epidemiology to learn about about systematic error!
 2. The population distribution of the variable follows a perfectly Normal distribution $N(\mu, \sigma)$
-3. The standard deviation in the population $\sigma$ is known. Rhis assumption is relaxed in a later lecture. 
+3. The standard deviation in the population $\sigma$ is known. This assumption is relaxed in a later lecture. 
 
 ### Mean height example
 
@@ -58,7 +61,7 @@ First, we need to check if the problem description meets the conditions/assumpti
 multiple stages. For this question, we will pretend the sample is a SRS.
 * Assumption 2: Assume that the distribution of heights in the total population is Normally distributed.
 This is an okay assumption to make about measurements like height. If you had 
-access to the sample, we could make a histogram of the data and see if the sample
+access to the sample, we could make a histogram and qqplot of the data and see if the sample
 appears to be roughly Normally distributed and use that as evidence in support of
 this assumption.
 * Assumption 3: We are not provided the population standard deviation $\sigma$, but perhaps we
