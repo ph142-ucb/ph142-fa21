@@ -10,6 +10,6 @@ name: p2
 "
 
 test_that("p2a", {
-  expect_true(all.equal(p2, 514, tol = 0.01))
+  expect_true(all.equal(p2, 2054, tol = 0.01))
   print("Checking: Sample size is correct")
 })
