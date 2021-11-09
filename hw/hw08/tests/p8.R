@@ -42,6 +42,6 @@ test_that("p8d", {
 })
 
 test_that("p8e", {
-  expect_true("GeomSegment" %in% class(p8$layers[[2]]$geom))
+  expect_true('GeomSegment' %in% sapply(p8$layers, function(x) class(x$geom)[1]))
   print("Checking: Made line segments of confidence intervals")
 })
