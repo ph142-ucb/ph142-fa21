@@ -1,0 +1,18 @@
+---
+title: "PH 142 Final Exam - Datahub Portion"
+date: "12/4/2021"
+output: pdf_document
+---
+
+Note: PLEASE MAKE SURE THAT YOUR SID IS CORRECT! Your answers will be marked incorrect otherwise.
+```{r}
+sid <- NULL # Replace `NULL` with your student ID as an integer (not a string/character).
+```
+
+Run this chunk to load in the dataset. 
+```{r, include = F}
+source("./.src/utils.R")
+cereal <- load_dataset_cereal(sid)
+drug_bp <- load_dataset_drugbp(sid)
+```
+
